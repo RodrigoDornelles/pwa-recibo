@@ -1,0 +1,34 @@
+#pdfPreview {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+#pdfPivot{
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.only-print {
+    display: none;
+}
+
+@media print {
+    .not-print {
+        display: none !important;
+    }
+
+    .only-print {
+        display: block !important;
+    }
+
+    #pdfPreview {
+        display: block !important;
+    }
+}
