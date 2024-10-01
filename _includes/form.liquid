@@ -1,39 +1,40 @@
 
 <div class="row">
     <form class="col s12" id="reciboForm">
+        <input type="text" id="input-data" style="display:none;">
         <div class="row">
             <div class="input-field col s12 l6">
-                <input id="nome" type="text" class="validate" required>
-                <label for="nome">Nome</label>
+                <input id="input-nome" type="text" class="validate" required>
+                <label for="input-nome">Nome</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
             <div class="input-field col s12 l6">
-                <input id="cpf" type="text" class="validate" required>
-                <label for="cpf">CPF/CNPJ</label>
+                <input id="input-cpf-cnpj" type="text" class="validate" required>
+                <label for="input-cpf-cnpj">CPF/CNPJ</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12 l6">
-                <input id="numeroRecibo" type="text" class="validate" required>
-                <label for="numeroRecibo">Número do Recibo</label>
+                <input id="input-numero-recibo" type="text" class="validate" required>
+                <label for="input-numero-recibo">Número do Recibo</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
             <div class="input-field col s12 l6">
-                <input id="valor" type="text" class="validate" required>
-                <label for="valor">Valor R$</label>
+                <input id="input-valor" type="text" class="validate" required>
+                <label for="input-valor">Valor R$</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12 l6">
-                <input id="recebiDe" type="text" class="validate" required>
-                <label for="recebiDe">Recebi(emos) de</label>
+                <input id="input-pagador" type="text" class="validate" required>
+                <label for="input-pagador">Recebi(emos) de</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
             <div class="input-field col s12 l6">
-                <input id="referenteA" type="text" class="validate" required>
-                <label for="referenteA">Referente a</label>
+                <input id="input-descricao" type="text" class="validate" required>
+                <label for="input-descricao">Referente a</label>
                 <span class="helper-text" data-error="Campo obrigatório"></span>
             </div>
         </div>
@@ -42,7 +43,7 @@
                 <div class="file-field input-field">
                     <div class="btn">
                         <span>Comprovante (PIX)</span>
-                        <input type="file" id="pdfInput">
+                        <input type="file" id="input-pdf">
                     </div>
                     <div class="file-path-wrapper">
                         <input class="file-path validate" type="text">
