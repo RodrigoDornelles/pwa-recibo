@@ -1,4 +1,4 @@
-#pdfPreview {
+#output-pdf {
     border: 0;
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@
 }
 
 #pdfPivot{
+    width: 100vw;
     height: 65vh;
     overflow: hidden;
     position: relative;
@@ -17,6 +18,11 @@
 
 .only-print {
     display: none;
+}
+
+body {
+    max-height: 99vh;
+    overflow: hidden;
 }
 
 @media print {
@@ -28,7 +34,7 @@
         display: block !important;
     }
 
-    #pdfPreview {
+    #output-pdf {
         display: block !important;
     }
 }

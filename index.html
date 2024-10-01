@@ -14,9 +14,12 @@
             <h1>PWA Recibo</h1>
             {% include "form.liquid" %}
         </section>
-        <section>
+        <section class="only-print">
             {% include "preview.liquid" %}
         </section>
+        <div id="pdfPivot">
+            <iframe id="output-pdf" src=""></iframe>
+        </div>
     </main>
     <script>{% include "script.js" %}</script>
 </body>

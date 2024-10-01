@@ -1,31 +1,31 @@
 <br/>
-<div class="row only-print">
-    <div class="col s4">Recibo</div>
-    <div class="col offset-s2 s1">N:</div>
-    <div class="col s3">Valor:</div>
+<div class="row">
+    <div class="col s6"><strong>Recibo</strong></div>
+    <div class="col s1">N:</div>
+    <div class="col s1 output-numero-recibo"></div>
+    <div class="col s1">Valor:</div>
+    <div class="col s3 output-valor" data-format="brl"></div>
 </div>
 
-<div class="row only-print">
-    <div class="col s4">Recebi(emos) de</div>
-    <div id="view-pagante" class="col s8">&nbsp;</div>
-    <div class="col s4">A importância de</div>
-    <div id="view-importancia" class="col s8">&nbsp;</div>
-    <div class="col s4">E Clareza firmo(amos) o presente</div>
-    <div id="view-data" class="col s8">&nbsp;</div>
+<div class="row">
+    <div class="col s6">Recebi(emos) de</div>
+    <div class="col s6 output-pagador">&nbsp;</div>
+    <div class="col s6">A importância de</div>
+    <div class="col s6 output-valor" data-format="brl">&nbsp;</div>
+    <div class="col s6">Referente a</div>
+    <div class="col s6 output-descricao">&nbsp;</div>
+    <div class="col s6">E Clareza firmo(amos) o presente</div>
+    <div class="col s6 output-data" data-format="date"></div>
 </div>
 
-<div class="row only-print">
+<div class="row">
     <div class="col s12">Assinatura Eletronica:</div>
-    <br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
 </div>
 
-<div class="row only-print">
-    <div class="col s3">Nome:</div>
-    <div id="view-pagante" class="col s3"></div>
-    <div class="col s3">CPF/CNPJ:</div>
-    <div id="view-importancia" class="col s3"></div>
-</div>
-
-<div id="pdfPivot">
-    <iframe id="pdfPreview" src=""></iframe>
+<div class="row">
+    <div class="col s2">Nome:</div>
+    <div class="col s4 output-nome"></div>
+    <div class="col s2">CPF/CNPJ:</div>
+    <div class="col s4 output-cpf-cnpj"></div>
 </div>
